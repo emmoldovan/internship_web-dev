@@ -35,7 +35,7 @@ _This text is italic._
 - Item 2
 - Item 3
   - Nested Item 1
-    \*Nested Item 2
+  - Nested Item 2
 
 ## **Ordered list**
 
@@ -75,13 +75,9 @@ _This text is italic._
 
 <table><tr><td>This should be the boxed witting.</td></tr></table>
 
-## **Subscript**
+## **Subscript** <sub>This is subscript.</sub>
 
-<sub>This is subscript.</sub>
-
-## **Superscript**
-
-<sup>This is superscript.</sup>
+## **Superscript** <sup>This is superscript.</sup>
 
 <!-- Inline Code Block--> '<p>This is a paragraph</p>'
 
