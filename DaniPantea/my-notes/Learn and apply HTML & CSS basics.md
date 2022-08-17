@@ -191,3 +191,156 @@ This tags are inline elements, are used inside paragraphs
 * `index.html` **must be in the root folder**, and not a subfolder
 * Other pages could be in subfolders
 * Images should be placed in a subfolder
+
+## HTML Anchors and Attributes
+
+> \<a>
+* It is short from anchor
+* It is used to link to a different location whitin the current page, or to another page
+
+### Example:
+> \<a>google\</a>
+
+Attributes are added to elements, *always in the opening tag*, and it gives **extra information** to the browser about that element. (e.g. where the link goes, the location of an image file)
+
+Attributes are normally followed by equal sign and quotation marks
+
+### Example:
+
+> \<a href="http://google.com">Google\</a>
+
+### Absolute vs relative paths
+
+> \<a href="http://duckduckgo.com">This is the absolute path\</a>
+
+> \<a href="about-us.html">This is the relative path\</a>
+
+## CSS Introduction and Basics
+
+* CSS is written in property:value pairs
+* They are always separated by a colon **:**
+* The value is always followed by a semicolon **;**
+* We can write CSS inside a *style* attribute
+
+```html
+<h1 style="background-color: blue; font-size: 30px;">My first website</h1>
+<p style="font-size: 20px; color: red;">Today I'm learning how to create websites and how to use CSS</p>
+```
+
+> style="background-color: red;"
+
+> style="color: blue;"
+
+> style="font-size: 30px;"
+
+> style="text-align: left / center / right;"
+
+## About Colors
+
+`Colors can be set with keywords, hex codes, rgb and hsl values`
+
+> kewords: "red", "steelblue", "hotpink", "lightgreen", etc.
+
+> hex - hexadecimal values: start with a **#**, use numbers from **0** to **9** and letters from **a** to **f** : e.g. **#7ab0fb**
+
+> rgb - Red, Green, Blue: **rgb(0, 255, 0)**
+
+> hsl - Hue, Saturation, Lightness: **hsl(240, 100%, 75%)**
+
+---
+
+## Practice
+
+index.html
+```html
+<!-- 
+HTML
+  - h1 (the title of the page)
+  - An introductory paragraph
+  - Two h2s, each followed by a few paragraphs
+  - Inside the paragraphs, use strong and emphasis tags
+  - If you are feeling adventorus add a second page and link to it
+  
+CSS
+  - Change the color of the h1
+  - Change the text alignment of the h1
+  - Change the color of the h2s
+  - Change the font-size of the paragraphs
+  - If you added a link, change the color of it
+ -->
+ 
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Green webpage</title>
+     </head>
+     <body>
+         <h1 style="text-align: center; color: green;">This is the Green webpage</h1>
+         <h2 style="text-align: left; color: darkblue; background-color: lightblue;">First Chapter of the story</h2>
+         <p style="text-align: left; color: grey;">The <strong>story</strong> of <em>Green</em> begins with...</p>
+         <p style="font-size: 20px;">This is the <em>second paragraph</em> of first section</p>
+         <h2 style="text-align: right; color: white; background-color: purple;">Second Chapter of the story goes on...</h2>
+         <p>To continue reading go to <a href="second-chapter.html"; style="color: red">next</a> page</p>
+     </body>
+ </html>
+ ```
+second-chapter.html
+```html
+<html>
+    <head>
+        <title>Second Chapter...???!!!</title>
+    </head>
+    <body style="background-color: cyan;">
+        <h1 style="color: darkblue;">Here should be the Second Chapter</h1>
+        <p style="color: grey;">But it isn't...</p>
+        <p>You might want to go <a href="index.html" style="font-size: 30px; color: brown;">back</a> to homepage</p>
+    </body>
+</html>
+```
+
+## HTML lists
+
+`There are two different type of lists:`
+
+* Order lists
+
+```html
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+```
+* Unorder lists
+
+```html
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+```
+
+## Images
+
+`For images we are using the following tag`
+
+> \<img>
+
+The image tag is self-closing, you don't need to use a closing tag like: \</img>
+
+`Images use the "src" attribute, short for source` 
+
+The syntax:
+```html
+<img src="image.jpg">
+
+<img src="https://static01.nyt.com/images/2016/07/26/science/Obsscitake/Obsscitake-videoSixteenByNineJumbo1600.jpg">
+```
+
+`The second mandatory attribute is "alt" (images are not valid without it) - it describes the image, helpfull for accesibility`
+
+The syntax:
+```html
+<img src="image1.jpg" alt="This is image 1">
+```
