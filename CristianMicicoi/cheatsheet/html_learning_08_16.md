@@ -90,3 +90,67 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
     </body>
 </html>
 ```
+
+> ## HTML - strong and emphasis
+
+```
+<strong> (the text inside <strong>) indicates that it is of strong importance; browsers make this text bold);
+```
+
+```
+<em> (the text inside <em></em> has stress emphasis, browsers make this text italic);
+```
+
+- ## They are inline elements
+
+  - use <"strong"> and <"em">(I write like this with quotation marks, because otherwise it appears as a line of code) ;
+  - you must close a <"strong"> or <"em"> before the end of your paragraph
+
+  ```
+  <p><strong>Warning:</strong> it's very cold outside</p>
+
+  ```
+
+```
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Storng and emphasis</title>
+    </head>
+    <body>
+      <h1>Strong and amphasis</h1>
+      <p>Strong and emphasis elements help put important on our text</p>
+
+      <h2>The strong tag</h2>
+      <p>We use the strong tag to put strong importance on text</p>
+
+      <h3>An example</h3>
+      <p><strong>Warning:</strong>watch out for the guard dog</p>
+
+      <h2>The emphasis tag</h2>
+      <p>We use the emphasis tag to put stress emphasis on our text</p>
+
+      <h3>An example</h3>
+      <p>It is <em>really</em> hot outside</p>
+    </body>
+  <html>
+```
+
+> ## File naming and organization
+
+- ## File naming: keep file names short; they should be descriptive(e.g. "page2.html" vs. "about us .html"); no spaces, use underscores or hyphens instead; use lower case("About-us.html" vs "about-us.html");
+- ## File organization: the main folder is called our **root folder**; the homepage **must be _index.html_** ; **_index.html_** must be in the root folder , and not a sub-folder; other pages can be in subfolder, depending on how you want to stay organized; images should be placed in a sub folder for better organization.
+
+> ## HTML - anchors and attributes
+
+```
+  <a> (short for "anchor") used to link either to a different location within the current page or to another page; we tell the anchor to link to with ATRIBUTES;
+```
+
+- atributes are normally followed by an equal sign and quotation marks; a link will not work without an **_href_** attribute:
+
+```
+<a>href="https://google.com">google</a>
+```
+
+- If the page you are linking to is not part of your website, it must start with _http://_ or _https://_ to let the browser now it is an external site that you are linking to.
