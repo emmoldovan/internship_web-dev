@@ -1,3 +1,5 @@
+- ##### _08.16.2022_
+
 # HTML & CSS Crash Course
 
 > ## The building blocks of the web
@@ -91,6 +93,8 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 </html>
 ```
 
+- ##### _08.17.2022_
+
 > ## HTML - strong and emphasis
 
 ```
@@ -154,3 +158,27 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 ```
 
 - If the page you are linking to is not part of your website, it must start with _http://_ or _https://_ to let the browser now it is an external site that you are linking to.
+
+```
+<a href="https://google.com">google</a>
+```
+
+- ##### _08.18.2022_
+
+```
+<html>
+    <head>
+        <title>Anchors and Attributes</title>
+    </head>
+    <body>
+        <h1>Anchors</h1>
+        <p>We use the anchor tag to setup hyperlinks. When a user clicks on the hyperlink, it will bring them to the specified location, which could be within the same page, or to another page.</p>
+    </body>
+</html>
+```
+
+> ## Introduction to CSS - _it's all about style!_
+
+- CSS is all about **property: value** pairs: _properties_ are what we want to change(color, font-size, font-weight); _values_ are what we want to set that property to (font-size: 21px;)
+- **The syntax** : there must be a colon (:) between the property and value: font-size: 21px'; the _value_ is always followed by a semicolon(;) ;
+- **The style attribute**: one way to add CSS is through the _style_ attribute `<p style= "">` and write CSS inside the quotation marks: `<p style="font-size: 21px">`
