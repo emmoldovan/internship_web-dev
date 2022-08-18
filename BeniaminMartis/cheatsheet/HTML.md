@@ -90,3 +90,35 @@ we use those inside the paragraphs.
 - or if something is in a sub folder you put the folder name forword slash and than the file name. 
 - visit our <a href="team/john.html">about us</a> page!
 
+`Ordered and unordered list`
+<ul>unordered list</ul>
+<ol>ordered list</ol>
+
+  <ol>
+            <li>List item one</li>
+            <li>a second list item</li>
+            <li>a third item here</li>
+            <li>yet another list item</li>
+  </ol>
+
+  <ul>
+            <li>bullet point 01</li>
+            <li>another bullet</li>
+  </ul>
+
+`Images`
+- Images use `src = source` attribute. 
+<img src="image.jpg"> 
+<img src="image.jpg" /> (the forword slash at the end is to indicate that it's self closing)
+
+- Images are not valid without an alt attribute. `alt` atribute is used to describe the image.
+
+<img src="cute-cat.jpg" alt="a very cute cat">
+
+if it is a decorative element or logo, it doesant need alt text (but it does still require the alt attribute.)
+<img src="logo.jpg" alt="">
+<img src="decorative-red-ball.jpg" alt="">
+- If the image is in the image folder you must write 
+<img src="image/decorative-red-ball.jpg" alt=""> telling the browser where the image is located.
+
+
