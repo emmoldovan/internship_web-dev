@@ -1,3 +1,5 @@
+Date: 16-08-22
+
 # What will be covered
 1. What are HTML and CSS
     * Basic structure and syntax
@@ -215,6 +217,9 @@ Attributes are normally followed by equal sign and quotation marks
 
 > \<a href="about-us.html">This is the relative path\</a>
 
+---
+Date: 17-08-22
+
 ## CSS Introduction and Basics
 
 * CSS is written in property:value pairs
@@ -344,3 +349,311 @@ The syntax:
 ```html
 <img src="image1.jpg" alt="This is image 1">
 ```
+
+
+---
+Date: 18-08-22
+
+## Internal CSS
+
+`Up to this point I've learned how to use inline styles, but instead of inline styles we should use a stylesheet to apply CSS on our website, which will help us to make global changes.`
+
+Therefore the styles will need to be applied whitin "head" section
+```html
+<head></head>
+``` 
+
+Syntax:
+```html
+<head>
+    <style>
+        CSS goes here
+    </style>
+</head>
+```
+
+`To apply a style to an element we use SELECTORS`
+
+Example how to **declare** the style :
+
+```html
+<head>
+    <style>
+        body {
+            color: #323232;
+        }
+        h1 {
+            font-size: 20px;
+            color: blue;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+```
+
+Note:
+> the element (e.g. body) on which we apply a style is written without <>
+
+> the style - property:value - is added inside curly brackets { }
+
+---
+
+## External CSS
+
+`For external CSS we create a new folder in our project directory that can be called "css" and inside this folder we need to create a file which we can call "style.css"`
+
+Now on this new file "style.css" we can apply the CSS we desire like below:
+
+```html
+    body {
+        background-color: blue;
+        color: white;
+    }
+    h1 {
+        font-size: 30px;
+    }
+```
+
+To apply this style on our pages we need to link this file "style.css" with each page using the below syntax:
+
+```html
+    <html>
+        <head>
+            <title>Learning external CSS</title>
+            <link href="css/style.css" rel="stylesheet">
+        </head>
+    </html>
+```
+
+So, we need to use the "link" tag inside "head" section of the page.
+
+The attributes we use for "link" elements are:
+
+    * href="here we add the exact adress where the style.css file is located"
+    * rel="stylesheet" <--Don't forget about this attribute!
+
+## The relationship between HTML and CSS
+
+`The 3 primary ways to select something`
+
+> Element selector
+
+ ```html 
+        body {
+            background-color: blue;
+        }
+```
+
+> Class selector
+
+> ID selector
+
+1. Classes - are type of attribute that we can add to an HTML element
+
+```html
+<p class="intro"> ... </p>
+```
+
+In CSS, the class attribute is referenced by using a full stop (a dot .)
+
+```html
+.intro {
+    font-size: 18px;
+    color: #2b5dad;
+}
+
+.sidebar {
+    padding : 1em;
+    background: #f4f4f4;
+}
+
+.button {
+    text-decoration: none;
+    background: #ff3300;
+    padding: .5em 1.5em;
+}
+```
+
+2. IDs - are a type of attribute we can add to an HTML element
+
+```html
+    <p id="ìntro"> ... </p>
+```
+An ID is represented by a hashtag #
+
+```html
+#intro {
+    font-size: 18px;
+    color: #2b5dad;
+}
+
+#main {
+    background:  #f4f4f4;
+}
+
+#carousel {
+    max-height: 75vh;
+}
+```
+
+## ID vs Class
+
+ID and Class are similar **but not identical**:
+
+* ID is an individual 
+* Class is a group
+
+Two important diffrences:
+
+> An ID can only be used one time per page
+
+> A Class can be used over and over again
+
+> ID will overwrite a Class if they are both selecting the same thing
+
+### Naming the Classes and IDs
+
+Some rules:
+
+> Spaces cause problems!
+
+```html
+    <div class="a box"> not equal with .a box { ... }
+
+    <div class="a-box"> is equal with .a-box { ... }
+```
+
+
+## Comments
+
+`In HTML for adding comments we use the folowing symbols:`
+
+```html
+    <!-- Here goes the comments for HTML -->
+```
+
+`In CSS we use the folowing symbols:`
+
+```css
+    /* Here goes the comments for CSS */
+```
+
+`The shortcut keyboard combination is: ctrl + /`
+
+## Important tags used for Layout:
+
+1. header
+1. main
+1. section
+1. footer
+1. nav
+1. div (generic)
+
+## Introduction to the box model
+
+`Most elements are 'block levels' elements by default`
+
+* they have a width of 100% of their parent
+* they have a height of 0 (this means it will grow with the content)
+* they stack on on top of the other
+
+Example:
+
+```css
+main {
+    width: 200px;
+    height: 300px; /* height should not be used, because it can cause the text to overflow. It can though be used in some special cases */
+}
+```
+
+### Margins and Padding
+
+`1. Margins are used to control the position of an element relative to those around it`
+
+Margins have 4 different properties:
+
+> margin-top: 10px;
+
+> margin-right: 10px;
+
+> margin-bottom: 10px;
+
+> margin-left: 10px;
+
+`There is a shorthand margin property:`
+
+Using all 4:
+
+> margin: 10px 20px 30px 40px;
+
+> margin: top right bottom left (clockwise)
+
+Using only one:
+
+> margin: 50px;
+
+> margin: all sides
+
+Using only two:
+
+> margin: 10px 20px;
+
+> margin: top&bottom left&right
+
+Using only three:
+
+> margin: 35px 10px 20px 35px;
+
+> margin: top right&left bottom
+
+`2. Padding is used to control the positioning of content inside our element`
+
+Similar to margin:
+
+> padding-top: 10px;
+
+> padding-right: 10px;
+
+> padding-bottom: 10px;
+
+> padding-left: 10px;
+
+> padding: 20px 30px 40px 50px;
+
+
+### Borders
+
+`It takes 3 properties to set a border:`
+
+> border-width: 3px;
+
+> border-style: solid; (dotted; dashed; double; groove; ridge; outset; )
+
+> border-color: yellow;
+
+The shorthand property:
+
+> border: 3px solid yellow;
+
+## Some important notes:
+
+> --> always define the margin of body to 0 (zero), this will remove the small white margin
+
+```html
+body {
+    margin: 0;
+}
+```
+
+> --> to center align an entire element (e.g. main) you can use margin auto
+
+```html
+main {
+    margin: 0 auto;
+}
+```
+
+## Creating columns with flexbox
+
