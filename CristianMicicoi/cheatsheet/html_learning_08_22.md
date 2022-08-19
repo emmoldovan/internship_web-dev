@@ -1,4 +1,4 @@
-- ##### _08.16.2022_
+##### _08.16.2022_
 
 # HTML & CSS Crash Course
 
@@ -93,7 +93,7 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 </html>
 ```
 
-- ##### _08.17.2022_
+##### _08.17.2022_
 
 > ## HTML - strong and emphasis
 
@@ -163,7 +163,7 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 <a href="https://google.com">google</a>
 ```
 
-- ##### _08.18.2022_
+##### _08.18.2022_
 
 ```
 <html>
@@ -179,6 +179,21 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 
 > ## Introduction to CSS - _it's all about style!_
 
-- CSS is all about **property: value** pairs: _properties_ are what we want to change(color, font-size, font-weight); _values_ are what we want to set that property to (font-size: 21px;)
-- **The syntax** : there must be a colon (:) between the property and value: font-size: 21px'; the _value_ is always followed by a semicolon(;) ;
-- **The style attribute**: one way to add CSS is through the _style_ attribute `<p style= "">` and write CSS inside the quotation marks: `<p style="font-size: 21px">`
+- ## CSS is all about **property: value** pairs: _properties_ are what we want to change(color, font-size, font-weight); _values_ are what we want to set that property to (font-size: 21px;)
+- ## **The syntax** : there must be a colon (:) between the property and value: font-size: 21px'; the _value_ is always followed by a semicolon(;) ;
+- ## **The style attribute**: one way to add CSS is through the _style_ attribute `<p style= "">` and write CSS inside the quotation marks: `<p style="font-size: 21px">`
+
+##### _08.19.2022_
+
+- ## Some basic styles:
+
+  - _font-size_ - sets the font size, for now we stick to pixels (px) ;
+  - _color_ - change the color of the text ;
+  - _background-color_ - sets the background color ;
+  - _tex-align_ - align the next to the **left, center or right** ;
+
+- ## **Colors** can be set with keywords, hex codes, rhg and hsl values:
+  - _keywords_ - "red", "steelblue", "hotpink" etc.
+  - _hex_ - hexadecimal values: **#7ab0fb** etc.
+  - _rgb_ - Red, Green, Blue: \*\*rgb(0,255,0) etc.
+  - _hsl_ - Hue, Saturation, Lightness: hsl(240, 100%, 75%) etc.
