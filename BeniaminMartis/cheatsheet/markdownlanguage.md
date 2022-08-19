@@ -65,7 +65,7 @@
 
 <!--Table-->
 
- Create a simple MD file# <br>
+Create a simple MD file# <br>
 Open VS Code on an empty folder and create a sample.md file.
 
 Note: You can open a folder with VS Code by either selecting the folder with File > Open Folder or navigating to the folder and typing 'code .' at the command line.
