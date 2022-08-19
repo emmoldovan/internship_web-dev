@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== 
+Styles for Header section 
+===== */
+
+header {
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 54px;
+    font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif; /* how is this used ??? */
+    position: relative; /* what this does ??? */
+    top: 0; /* what this does ??? */
+    display: block; /* is it block by default ?? */
+
+    border: 5px solid red; /* temporary */
+}
+
+.nav-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 970px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    /* display: inline-block; */
+    /* text-align: center; */
+    
+
+    border: 3px yellow solid; /* temporary */
+}
