@@ -8,8 +8,7 @@ body {
 }
 
 main > *,
-header,
-footer {
+header {
     padding: 0 125px;
 }
 
@@ -198,6 +197,14 @@ header {
     color: rgb(121, 213, 153)
 }
 
+.platf-toplinks-deco {
+    color: white;
+}
+
+.platf-toplinks-deco:hover {
+    color: #1ed760;
+}
+
 .dot-style {
     color: rgb(29, 185, 84);
     font-size: 22px; 
@@ -205,12 +212,17 @@ header {
 
 footer {
     background-color: #000;
-    padding: 80px 0 50px;
     color: #919496;
+    padding: 80px 125px 50px;
 }
 
 .container-toplinks {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.toplinks {
+    display: flex;
 }
