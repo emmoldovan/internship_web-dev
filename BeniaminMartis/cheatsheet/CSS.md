@@ -41,3 +41,105 @@
 - `rgb` - Red, Green, Blue rgb(0,255,0)
 - `hsl` - Hue, Saturation, Lightness hsl (240, 100%, 75%) (hue 240, saturation 100%, lightness hsl 75%)
 
+<!-- we can use an internal style sheet that is placed in the head of our pages -->
+
+<head>
+    <style>
+        CSS goes here
+    </style>
+</head>
+
+<!--How do we chose what we want to style?-->
+- selectors
+- `If you want to select the whole body of the text to add a change on it you do it like this.`
+
+    body {
+        color: #323232;
+    }
+
+- `Rule:` selector and property value declarations all of that together is the rule.
+
+- `Selecting elements`: 
+<ul>
+- Write the element (what is inside the tag), but without the tag itself <> <br>
+- Do NOT include ~~attributes~~ (if your doing an image your just putting img your not putting ~~img and src etc..~~)(same with links you are not putting ~~`href`~~ in there you are just putting `a` since that is the anchor tag)<br>
+- a{ write CSS inside here }
+- p{ ... }
+- h2{ ... }
+</ul>
+
+- With an `External CSS` file, we can have one stylesheet controlling all of our pages at the same time. you just have to link that CSS file with every file you would like to be changed. Be very careful with this because you can lose a ton of work.
+One file controls ALL the styles, not the page you are on. If you delete something from the stylesheet, or change something, it is changing for all the pages.  
+
+- How do you connect your External CSS file to your pages?<br>
+Use a `link`, which links to your CSS file. <br>
+In the head of our document, we add: <br>
+```html 
+<link href="css/style.css"> rel="stylesheet">
+```
+```
+body {
+    background-color: #333; 
+    color: #f4f4f4;
+}
+
+a {
+    color: darksalmon;
+}
+
+h1 {
+    color: aquamarine;
+}
+```
+
+- do not mix External CSS files with Internal CSS files, because if you do than you will not know where to look when you need to make a change. 
+
+
+- `The three primary ways to select something is` :
+<ul>
+ 
+- Element selector<br>
+- Class Selector <br>
+- ID selector <br>
+
+</ul>
+
+`Element Selector` simply write the element's tag, without the <> <br>
+Also, do NOT include any attributes.
+```
+body {
+    background-color: #333; 
+    color: #f4f4f4;
+}
+
+a {
+    color: darksalmon;
+}
+```
+
+`Class Selector` are a type of attribute we can add to an HTML element. 
+```
+<p class="intro"> ... </p>
+```
+In CSS I can select the class attribute by using a full stop. My full stop is the "." the dot before the intro
+```
+.intro {
+    font-size: 18px;
+    color: #2b5dad;
+}
+```
+If it has a dot intro it selects a paragraph that has a class intro on it. <br>
+Classes are type of attribute we can add to an HTML element<br>
+The dot literally means class of intro
+```
+<p class="intro"> ... </p>
+```
+```
+p.intro{
+    font-size: 18px;
+    color: #2b5dad;
+}
+```
+
+- How do you make a paragraph different in color than other paragraph? 
+
