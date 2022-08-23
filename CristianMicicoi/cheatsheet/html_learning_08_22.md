@@ -70,26 +70,48 @@ _Tags are inside of "<>"; closing tags include a forward slash</>; everything fr
 <body> (contains the content that will be visible to the user when they visit a page)
 ```
 
-```
-heading <h1>, <h2>, <h3>, <h4>, <h5> and stops at <h6>
+```html
+heading
+<h1>
+  ,
+  <h2>
+    ,
+    <h3>
+      ,
+      <h4>
+        ,
+        <h5>
+          and stops at
+          <h6></h6>
+        </h5>
+      </h4>
+    </h3>
+  </h2>
+</h1>
 ```
 
-```
-paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <p3>...
+```html
+paragraphs is regular text
+<p>
+  , they are not numbered, there is no
+  <p1
+    >, <p2>, <p3>...</p3></p2></p1
+  >
+</p>
 ```
 
-```
+```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>page title</title>
-    </head>
-    <body>
-        <h1>heading1</h1>
-        <p>paragraph</p>
-        <h2>heading 2</h2>
-        <p>paragraph</p>
-    </body>
+  <head>
+    <title>page title</title>
+  </head>
+  <body>
+    <h1>heading1</h1>
+    <p>paragraph</p>
+    <h2>heading 2</h2>
+    <p>paragraph</p>
+  </body>
 </html>
 ```
 
@@ -97,12 +119,21 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 
 > ## HTML - strong and emphasis
 
-```
-<strong> (the text inside <strong>) indicates that it is of strong importance; browsers make this text bold);
+```html
+<strong>
+  (the text inside
+  <strong
+    >) indicates that it is of strong importance; browsers make this text
+    bold);</strong
+  ></strong
+>
 ```
 
-```
-<em> (the text inside <em></em> has stress emphasis, browsers make this text italic);
+```html
+<em>
+  (the text inside <em></em> has stress emphasis, browsers make this text
+  italic);</em
+>
 ```
 
 - ## They are inline elements
@@ -110,34 +141,34 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
   - use <"strong"> and <"em">(I write like this with quotation marks, because otherwise it appears as a line of code) ;
   - you must close a <"strong"> or <"em"> before the end of your paragraph
 
-  ```
+  ```html
   <p><strong>Warning:</strong> it's very cold outside</p>
-
   ```
 
-```
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Storng and emphasis</title>
-    </head>
-    <body>
-      <h1>Strong and amphasis</h1>
-      <p>Strong and emphasis elements help put important on our text</p>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Storng and emphasis</title>
+  </head>
+  <body>
+    <h1>Strong and amphasis</h1>
+    <p>Strong and emphasis elements help put important on our text</p>
 
-      <h2>The strong tag</h2>
-      <p>We use the strong tag to put strong importance on text</p>
+    <h2>The strong tag</h2>
+    <p>We use the strong tag to put strong importance on text</p>
 
-      <h3>An example</h3>
-      <p><strong>Warning:</strong>watch out for the guard dog</p>
+    <h3>An example</h3>
+    <p><strong>Warning:</strong>watch out for the guard dog</p>
 
-      <h2>The emphasis tag</h2>
-      <p>We use the emphasis tag to put stress emphasis on our text</p>
+    <h2>The emphasis tag</h2>
+    <p>We use the emphasis tag to put stress emphasis on our text</p>
 
-      <h3>An example</h3>
-      <p>It is <em>really</em> hot outside</p>
-    </body>
-  <html>
+    <h3>An example</h3>
+    <p>It is <em>really</em> hot outside</p>
+  </body>
+  <html></html>
+</html>
 ```
 
 > ## File naming and organization
@@ -147,33 +178,37 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 
 > ## HTML - anchors and attributes
 
-```
+```h
   <a> (short for "anchor") used to link either to a different location within the current page or to another page; we tell the anchor to link to with ATRIBUTES;
 ```
 
 - atributes are normally followed by an equal sign and quotation marks; a link will not work without an **_href_** attribute:
 
-```
+```html
 <a>href="https://google.com">google</a>
 ```
 
 - If the page you are linking to is not part of your website, it must start with _http://_ or _https://_ to let the browser now it is an external site that you are linking to.
 
-```
+```html
 <a href="https://google.com">google</a>
 ```
 
 ##### _08.18.2022_
 
-```
+```html
 <html>
-    <head>
-        <title>Anchors and Attributes</title>
-    </head>
-    <body>
-        <h1>Anchors</h1>
-        <p>We use the anchor tag to setup hyperlinks. When a user clicks on the hyperlink, it will bring them to the specified location, which could be within the same page, or to another page.</p>
-    </body>
+  <head>
+    <title>Anchors and Attributes</title>
+  </head>
+  <body>
+    <h1>Anchors</h1>
+    <p>
+      We use the anchor tag to setup hyperlinks. When a user clicks on the
+      hyperlink, it will bring them to the specified location, which could be
+      within the same page, or to another page.
+    </p>
+  </body>
 </html>
 ```
 
@@ -204,15 +239,18 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 
 - Two tipes of list:
   - ordered lists -> (ol)0 - each bullet or numbered item is a **list item** or li -> <>
-  ```
+  ```html
   <ol>
-    <li>list item</li>           1. list item
-    <li>list item</li>           2. list item
-    <li>list item</li>           3. list item
+    <li>list item</li>
+    1. list item
+    <li>list item</li>
+    2. list item
+    <li>list item</li>
+    3. list item
   </ol>
   ```
 
-```
+```html
 <ul>
   <li>list item</li>
   <li>list item</li>
@@ -225,37 +263,61 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
 - Images are like links, in that **they require an attribute to work** and this is _src_ attribute, wich is sort for _**source**_
 - Images are different from other elements, in that they are **self-closing**.
 
-```
-<img src="image.jpg">
+```html
+<img src="image.jpg" />
 ```
 
 or
 
-```
-<img src="image.jpg"/>
+```html
+<img src="image.jpg" />
 ```
 
 - Like links, we can point to external images by including the entire URL of the image, or we can point to images within our site by listing the file name.
 
-```
-<img src="image.jpg">
-<img src="https://website.com/image.jpg">
+```html
+<img src="image.jpg" /> <img src="https://website.com/image.jpg" />
 ```
 
 - Images are not valid without an **alt** attribute. The **alt** attribute is used to describe the image, to describe the intent of the image:
 
-```
-<img src="cute-cat.jpg" alt="a very cute cat">
+```html
+<img src="cute-cat.jpg" alt="a very cute cat" />
 ```
 
 - If it is a decorative element or logo, it doesn't need alt text(but it _does_ still require the _alt_ attribute):
 
-```
-<img src="logo.jpg" alt="">
+```html
+<img src="logo.jpg" alt="" />
 ```
 
-```
-<img src="decorative-red-ball.jpg" alt="">
+```html
+<img src="decorative-red-ball.jpg" alt="" />
 ```
 
 - Practice in _practice_ folder of the lists and images inserting in html.
+
+##### _08.23.2022_
+
+- ## Practice more with HTML that I have learned until now, creating three new pages about Earth an Mars in _practice_ folder and linking all the three pages together.
+
+> ## Internal CSS
+
+- Integrate internal style sheet :
+
+```html
+<head>
+  <style>
+    CSS goes here
+  </style>
+</head>
+```
+
+- We choose what we want to style with **selectors**:
+  - to change all text color from body:
+  ```html
+  body { color: #323232; }
+  ```
+  - the property _value pair_ is also called _declaration_;
+  - to select an element, write the element but without <> (a{...}), do not include attributes (p{...}), (h2 {...}); for image use: img without src, for link just using a, without <>;
+- Practicing on the 3 pages I made above.
