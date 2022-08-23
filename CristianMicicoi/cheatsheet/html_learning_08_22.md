@@ -197,3 +197,65 @@ paragraphs is regular text <p>, they are not numbered, there is no <p1>, <p2>, <
   - _hex_ - hexadecimal values: **#7ab0fb** etc.
   - _rgb_ - Red, Green, Blue: \*\*rgb(0,255,0) etc.
   - _hsl_ - Hue, Saturation, Lightness: hsl(240, 100%, 75%) etc.
+
+##### _08.22.2022_
+
+> ## HTML lists
+
+- Two tipes of list:
+  - ordered lists -> (ol)0 - each bullet or numbered item is a **list item** or li -> <>
+  ```
+  <ol>
+    <li>list item</li>           1. list item
+    <li>list item</li>           2. list item
+    <li>list item</li>           3. list item
+  </ol>
+  ```
+
+```
+<ul>
+  <li>list item</li>
+  <li>list item</li>
+  <li>list item</li>
+</ul>
+```
+
+> ## Images
+
+- Images are like links, in that **they require an attribute to work** and this is _src_ attribute, wich is sort for _**source**_
+- Images are different from other elements, in that they are **self-closing**.
+
+```
+<img src="image.jpg">
+```
+
+or
+
+```
+<img src="image.jpg"/>
+```
+
+- Like links, we can point to external images by including the entire URL of the image, or we can point to images within our site by listing the file name.
+
+```
+<img src="image.jpg">
+<img src="https://website.com/image.jpg">
+```
+
+- Images are not valid without an **alt** attribute. The **alt** attribute is used to describe the image, to describe the intent of the image:
+
+```
+<img src="cute-cat.jpg" alt="a very cute cat">
+```
+
+- If it is a decorative element or logo, it doesn't need alt text(but it _does_ still require the _alt_ attribute):
+
+```
+<img src="logo.jpg" alt="">
+```
+
+```
+<img src="decorative-red-ball.jpg" alt="">
+```
+
+- Practice in _practice_ folder of the lists and images inserting in html.
