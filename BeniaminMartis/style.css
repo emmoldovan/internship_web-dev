@@ -1,0 +1,21 @@
+/* COMMENT HERE tot ce scrii aici ii trecut ca notes, nu se va vedea in browser */
+/* If you hold CTRL and press the forward slash it will automatically set up the note taking that will not show up in the browser. */
+body {
+    background: #333;
+}
+
+p {
+    font-size: 24px;
+}
+h1 {
+    color: burlywood;
+    font-size: 60px;
+}
+h3 {
+    font-size: 24px;
+    color:aliceblue
+}
+ol {
+    align left: ;
+}
+

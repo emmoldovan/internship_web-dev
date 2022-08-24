@@ -140,6 +140,68 @@ p.intro{
     color: #2b5dad;
 }
 ```
+```
+.sidebar {
+    padding: 1em;
+    background: #f4f4f4;
+}
+.button {
+    text-decoration: none;
+    background: #ff3300
+    padding: .5em 1.5em;
+}
+```
+- IDs are a type of attribute we can add to an HTML element <br>
+Instead of class it's ID <br>
+An ID is represented by a hashtag (#)
+```
+<p id="intro"> ... </p>
 
+#intro {
+    font-size: 18px;
+    color: #2b5dad;
+}
+```
+- The ID selector
+```
+#main {
+    background: #f4f4f4;
+}
+#carousel {
+    max-height: 75vh;
+}
+```
+- `ID` is an individual. (you can only have something with an ID once per page. so if you have an ID main, you can only have that main on one element in that page.)<br>
+Id will overwrite a class if they are both selecting the same thing.
+
+- `Class` is a group (class can be used over and over again on the same page)<br>
+Use classes dont use IDs unless is necessary
+
+- naming classes and IDs, Spaces cause problems! use a (-) instead of spacing.
+```
+<div class="a-box"> == .a-box { ... }
+```
 - How do you make a paragraph different in color than other paragraph? 
+```
+body {
+    background-color: #333; 
+    color: #f4f4f4;
+}
 
+a {
+    color: darksalmon;
+}
+
+.intro {
+    font-size: 24px;
+}
+
+#earth-title {
+    color: lightgreen;
+}
+
+#mars-title {
+    color: lightsalmon;
+}
+```
+- The way to leave a coment in CSS is: `/* COMMENT HERE */` nothing that is shown up here will show up in the browser. 
