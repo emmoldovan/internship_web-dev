@@ -321,3 +321,108 @@ or
   - the property _value pair_ is also called _declaration_;
   - to select an element, write the element but without <> (a{...}), do not include attributes (p{...}), (h2 {...}); for image use: img without src, for link just using a, without <>;
 - Practicing on the 3 pages I made above.
+
+##### _08.24.2022_
+
+> # External CSS
+
+- ## With an external CSS file, we can have one stylesheet controling _all_ of our pages at the same time.
+- ## **_Be careful_!** One file controls ALL styles, not the page you are on. If you delete something from the stylesheet, or change something, **it is changing for _all_ the pages!**
+- ## Instead of a style element, where we can write the CSS, we can use a **link**, wich links to our CSS file. In the head of our document, we add:
+
+```html
+<link href="css/style.css" rel="stylesheet" />
+```
+
+#where "rel" is the relationship with my current html page.
+
+> ## The relationship between HTML & CSS
+
+## The three primary ways to select something:
+
+- Element selector- learned in external CSS (write the element tag without the <>, and **do not** include any attributes);
+- Class selector- classses are a type of attribute we can add to an HTML element:
+
+```html
+<p class="intro">...</p>
+- will select any paragraph that has "intro" class on it.
+```
+
+#### In CSS the class attribute is referenced by using a full stop(.); used in paragraph like ex above, will select any paragraph that has "intro" class on it.
+
+ex:
+
+```html
+.intro { font-size: 18px; color: #2b5dad; } .sidebar { padding:1em; background:
+#f4f4f4; } .button { text-decoration: none; background:#ff3300; padding: .5em
+1.5em; }
+```
+
+- ID selector: IDs are a type of attribute we can add to an HTML element
+
+```html
+<p id="intro">...</p>
+```
+
+An ID is represented by a hashtag.
+Ex:
+
+```html
+#intro { font-size: 18px; color: #2b5dad; } #main { background: #f4f4f4 }
+#carousel { max-height: 75vh; }
+```
+
+## **ID vs Class**
+
+- I can't have the same ID twice in one page.
+- a class can be used over and over again and _only once if you want_.
+- ID will owerwrite a class if they are both selecting the same thing.
+
+## Naming classes and IDs
+
+- spaces can cause problems:
+
+```html
+<div class="a box">
+  'is not'=/= .a box {...}
+  <div class="a-box">'it is'== .a-box {...}</div>
+</div>
+```
+
+- there are a lot more ways to select stuff!
+
+> ## Comments
+
+A useful way to leave notes to yourself, or others if you're working on a large project.
+Two different ways to write them, but they use the same shortcut (_ctrl_ + _/_) :
+
+- In HTML : `<!-- comment here -->`
+- In CSS : `/*comment here */`
+
+They are vey useful:
+
+- reminding yourself why you did something or how something is working and where you are on the page
+- creating sections, or making things more clear in your HTML
+- leaving "TODO" notes to yourself (or others)
+
+> ## The only tags you need to know (for now)
+
+- The tags that i've seen so far have mostly been related to placing text or content on the page :
+
+  - h1->h6
+  - p
+  - strong and em
+  - a
+  - ul, ol, and li
+  - img
+
+- This all just put content in the page, they not building layouts or controlling our layouts.
+
+- There are several "layout" related HTML elements. All they function in the same way,so once you understand how one works, you understand how they all work.
+- The difference between them is that they denote **different parts** of your website:
+  - header
+  - main
+  - section
+  - footer
+  - nav
+  - div (**generic**)

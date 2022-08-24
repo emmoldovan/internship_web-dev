@@ -1,0 +1,14 @@
+/* TODO: change the color of the text to white */
+
+body {
+    background: #333;
+    color:#fff;
+}
+
+/*if we change the text color in body like above but also I put a color on h1 tag like below, the h1 tag color is more specific and that one will appear on my page */
+
+h1 {
+    color: red;
+}
+
+/* */
