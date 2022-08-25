@@ -1,0 +1,40 @@
+body {
+    background: #333;
+    color: white;
+}
+
+header {
+    width: 100px;
+
+    text-align: center;
+    
+    border: 10px solid red;
+    
+    border-bottom-color: yellow;
+    border-left-style: dashed;
+
+    padding: 30px;
+    margin: 30px;
+}
+/* shorthand for border on main */
+main {
+    width: 100px;
+
+    text-align: center;
+    
+    border: palevioletred 10px solid;
+    margin: 50px;
+    padding: 50px;
+}
+
+footer {
+    width: 50px;
+
+    border-top: solid red 10px;
+    border-bottom: dotted blue 15px;
+
+
+
+    padding: 20px;
+    margin: 20px;
+}

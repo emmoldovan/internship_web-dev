@@ -426,3 +426,54 @@ They are vey useful:
   - footer
   - nav
   - div (**generic**)
+
+##### _08.25.2022_
+
+> ## Intro to the box model
+
+- Most elements are "block level" elements by default
+  - they have a width of 100% of their parent
+  - they have a height of 0
+  - the height grows to match the content
+  - they stack one on top of the other
+  - !!! _Try to avoid setting height_ !!! to avoid text problems (written one over the other)
+- Margins & Padding
+  - margins are used to control the position of an element relative to those around it (margin-left, margin-right, margin-top, margin-bottom)
+  - we also have a shorthand margin property:
+  ```html
+  margin: 10px(top) 20px(right) 30px(bottom) 40px(left) margin: 50px(top-bottom)
+  50px(left-right) margins: 50px(all margins)
+  ```
+  - padding is used to control the positioning of content _inside_ our element; it works just like margin in terms of the long form and shorthand properties
+  - margin= empty space; padding= more background(add space)
+- Borders- add a border around your element. **It takes three properties to set a border** :
+
+  - border-width
+  - border-style
+  - border-color
+    (we need to do all three of this properties to actually get a border to work properly).
+  - We can also use the border shorthand (the prder you put them it doesn't mattter);
+    Ex:
+
+  ```html
+  .example { border-width: 2px; border-style: solid; border-color: pink; } =
+  .example { border: 2px solid pink; }
+  ```
+
+- you can also control the border of the different sides independently :
+
+  ```html
+  .example { border-left: 2px solid red; border-right: 5px dotted blue;
+  border-bottom: 10px double green; border-top: 1px dashed purple; }
+  ```
+
+- Box wrap up: the total width an height of an element is calculated by adding all the different part of the element together.
+
+  **The four parts of an element**:
+
+  - the content itself (what you set the width & height on)
+  - the padding
+  - the border
+  - the margin
+
+    _Don't forget that margin, padding, and borders add width to the left & the right_!
