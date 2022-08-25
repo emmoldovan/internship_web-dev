@@ -205,3 +205,6 @@ a {
 }
 ```
 - The way to leave a coment in CSS is: `/* COMMENT HERE */` nothing that is shown up here will show up in the browser. 
+
+- Margin = adding empty space around the text
+- Padding = adding more background around the text
