@@ -477,3 +477,41 @@ They are vey useful:
   - the margin
 
     _Don't forget that margin, padding, and borders add width to the left & the right_!
+
+##### _08.26.2022_
+
+> ## A basic layout (header-main-footer)
+
+- The header(changes to make in practice lesson):
+  - contains the `<h1>`
+  - has a dark background color
+  - has a light text color
+  - text is center alligned
+  - has a padding top anf bottom of 25px
+  - has a margin bottom of 25px
+- The main(changes to make in practice lesson):
+  - place the provided imaged in here
+  - place the text here using headings, paragraph and lists
+  - give it light background color
+  - give it a width of 600px
+  - give it equal padding on all sides
+  - give it a solid red border that is a 5px thick
+- The footer(changes to make in practice lesson):
+  - place the provided text in a paragraph
+  - give it a dark background color
+  - give it a light text color
+  - center align the text
+  - give it a padding top and bottom of 25px
+  - give it a margin of 25px on the top only
+- Centering and element on the page
+
+  Margins accept a set width, but you can also use the **auto** keyword. **Auto** will automatically place all the avaible space on that side: ` margin-left: auto; margin-right: auto; margin: 0(top-bottom) auto(left-right);` -this will not work on the top and bottom to get this "auto" works on vetical, it works just on left-right sides; you must have width on the element;
+
+  ## **When I have that little margin left-right that is default set by browser, I cand get rid of if I go on _body_ section and set first element `margin: 0;`**
+
+- ## Creating columns- _for the longest time, we had to use something called **floats** to make block level elements go next to one another. It involves things sliding under each other and clears. It was not fun._ \*By default, when setting **display:flex** on a element, all the children will become columns.
+
+- ## Creating the layout from scratch - the HTML
+- ## Creating the layout - the CSS
+
+> ## I have completed this HTML & CSS crash course and practice, by Kevin Powell!
