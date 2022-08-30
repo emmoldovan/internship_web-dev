@@ -302,7 +302,7 @@ border-style =
    `HTML`
    ```
    HTML
-   <pre class="b1">none</pre>
+<pre class="b1">none</pre>
 <pre class="b2">hidden</pre>
 <pre class="b3">dotted</pre>
 <pre class="b4">dashed</pre>
@@ -400,3 +400,17 @@ border-right: 5px dotted red;
 border-bottom: 10px double green;
 border-top: 1px dashed purple;
 ```
+- How to create columns in the page. 
+Floats make the block level elements go next to one another. 
+
+- display:flex on a element, all the children will become columns by default. 
+
+.columns {
+    width: 750px; 
+    display: flex;
+}
+
+.column {
+    border: 2px solid red;
+    margin: 5px;
+}
