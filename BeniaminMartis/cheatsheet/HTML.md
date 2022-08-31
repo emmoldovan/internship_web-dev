@@ -27,7 +27,7 @@ index.html
 - CLosing tags include a forward slash `</>`
 - Everything from the opening and closing tag is called an `element`.
 
-- The very first thing at the top of every document, tells the browser that this is an HTML 5 document.
+<!-- - The very first thing at the top of every document, tells the browser that this is an HTML 5 document. -->
 `<!DOCTYPE>`
 <html>
 <head>
@@ -124,4 +124,3 @@ if it is a decorative element or logo, it doesant need alt text (but it does sti
 - The way to leave a coment in HTML is: `<!-- COMMENT HERE -->`
 - The way to leave a coment in CSS is: `/* COMMENT HERE */`
 - /* If you hold CTRL and press the forward slash it will automatically set up the note taking that will not show up in the browser. THis is done in HTML and CSS */
-<!--  --> 
